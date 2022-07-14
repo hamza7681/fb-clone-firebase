@@ -1,0 +1,295 @@
+/* Feed  */
+
+.feed {
+  /* flex: 1; */
+  /* padding: 30px 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* messageSender  */
+
+.messageSender {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+
+.messageSender_top {
+  display: flex;
+  border-bottom: 1px solid #eff2f5;
+  padding: 15px;
+}
+
+.messageSender_top > form {
+  flex: 1;
+  display: flex;
+}
+
+.messageSender_top > form > input {
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+}
+
+.messageSender_top > form > button {
+  background-color: transparent;
+  border: none;
+  color: #2e81f4;
+  font-weight: bold;
+}
+
+.messageSender_input {
+  flex: 1;
+}
+
+.messageSender_bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.messageSender_option {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.messageSender_option > h3 {
+  font-size: small;
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+}
+
+.messageSender_option:hover {
+  background-color: #eff2f5;
+  border-radius: 20px;
+}
+
+/* Post  */
+
+.post {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.post_top {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding:0px 15px 15px 15px;
+  
+}
+
+.post_avatar {
+  margin-right: 10px;
+}
+
+.post_topInfo{
+  position: relative;
+  top: 8px;
+}
+
+.post_topInfo > h3 {
+  font-size: medium;
+  display: inline;
+}
+
+.post_topInfo>p{
+  color: gray;
+  font-size: small;
+  position: relative;
+  top: -4px;
+}
+
+.post_bottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px 
+}
+
+.post_image > img {
+  width: 100%;
+}
+
+.post_options {
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  color: gray;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.post_option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex: 1;
+}
+
+.post_option > p {
+  position: relative;
+  left: 10px;
+  top: 8px;
+}
+
+.post_option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+}
+
+/* post modal  */
+
+.create {
+  text-align: center;
+}
+
+.avatar_sec {
+  display: flex;
+  flex-direction: row;
+}
+.avatar_sec > p {
+  position: relative;
+  left: 10px;
+  top: 5px;
+  font-weight: 500;
+}
+
+.textarea_sec > textarea {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  color: gray;
+  resize:   none;
+}
+
+.add_to_post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+}
+
+.add_to_post > p {
+  font-weight: 500;
+}
+
+.add_to_post > div > .MuiSvgIcon-root {
+  margin-left: 8px;
+}
+
+.post_btn > button {
+  background-color: #2e81f4;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* emoji dropdown  */
+
+.emoji-select {
+  position: relative;
+  left: -10px;
+}
+
+.feelings {
+  margin-left: 3px;
+  color: gray;
+  font-size: 14px;
+ 
+}
+
+.show_act {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.done {
+  background-color: #2e81f4;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.post_img {
+  height: auto;
+  overflow: hidden;
+margin-bottom: 10px;
+border-radius: 6px;
+}
+.post_img >img{
+  width: 100%;
+}
+
+.post_sec{
+  height: 450px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .feed{
+    width: 95%;
+    margin-left:auto ;
+    margin-right: auto;
+  }
+  .messageSender_input {
+    width: 100px;
+  }
+  .messageSender_bottom {
+    justify-content: space-between;
+  }
+  .messageSender_option > .MuiSvgIcon-root {
+    font-size: small;
+  }
+  .messageSender_option > h3 {
+    font-size: 12px;
+  }
+  .messageSender_option {
+    padding: 10px 5px 10px 5px;
+  }
+  .post_sec {
+    width: 100% !important;
+  }
+  .post_option>p{
+    font-size: small;
+  }
+  .post_option>.MuiSvgIcon-root{
+    font-size: small ;
+    position: relative;
+    top: 2px;
+  }
+}

@@ -1,0 +1,8 @@
+.widgets{
+    width: 100%;
+    /* flex: 0.33; */
+}
+.widget{
+   height: 500px;
+   width: 100%;
+}

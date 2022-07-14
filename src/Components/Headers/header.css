@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 100;
+  background-color: white;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header_left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header_input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header_input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header_left > img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.header_middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header_option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header_option:hover > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header_option_active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+.header_option_active {
+  border-bottom: 4px solid #2e81f4;
+}
+
+.header_option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header_option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.header_info {
+  display: flex;
+  align-items: center;
+}
+
+.header_info > h4 {
+  margin-left: 10px;
+  font-size: medium;
+}
+.more_icon {
+  position: relative;
+  top: -4px;
+  left: -8px;
+}
+
+.btn_icon:hover {
+  background-color: white !important;
+}
+
+.header_right {
+  display: flex;
+}
+
+/* Dropdown  */
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  right: 18px;
+  width: 150px;
+  border: 1px solid #eff2f5;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+  padding: 10px 30px 10px 30px;
+  
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.logout {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen  and (min-width:768px){
+  .profile_header{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .header_right {
+    display: none;
+  }
+  .header_left {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .header_middle {
+    width: 100%;
+  }
+  .header_option {
+    padding: 0 15px;
+  }
+  .header_option > .MuiSvgIcon-root {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,270 @@
+.profile {
+  height: auto;
+  background-color: #eff2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_top {
+  width: 900px;
+}
+
+.cover_pic {
+  height: 350px;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+}
+
+.cover_pic > img {
+  width: 100%;
+}
+
+.profile_img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid lightgray;
+  position: relative;
+  top: -40px;
+  left: 20px;
+}
+
+.profile_img > img {
+  width: 100%;
+}
+
+.name > p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.edit {
+  float: right;
+  margin-top: 30px;
+}
+
+/* profile feed  */
+
+.profile_feed {
+  background-color: rgb(216, 216, 216);
+}
+
+.profile_feed_container {
+  width: 870px;
+}
+
+.intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 100%;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+.bio {
+  text-align: center;
+}
+
+.bio > button {
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  border: none;
+  padding: 8px 0px 8px 0px;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+.work,
+.education,
+.maritial,
+.location {
+  display: flex;
+  margin-top: 10px;
+}
+
+.work,
+.education,
+.maritial,
+.location > .MuiSvgIcon-root {
+  color: rgb(134, 134, 134);
+}
+
+.work > span {
+  color: rgb(134, 134, 134);
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.education > span {
+  color: rgb(134, 134, 134);
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.maritial > span {
+  color: rgb(134, 134, 134);
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.location > span {
+  color: rgb(134, 134, 134);
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.camera {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1 !important;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cover_btn {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  z-index: 1 !important;
+  background-color: #eff2f5;
+  color: rgb(134, 134, 134);
+  font-weight: 500;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  border-radius: 7px;
+  transition: 0.7s all ease;
+}
+
+.cover_btn:hover {
+  background-color: rgb(216, 216, 216);
+  transition: 0.7s all ease;
+}
+
+.camera > label > .MuiSvgIcon-root {
+  color: rgb(134, 134, 134);
+}
+
+.bio_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio_input {
+  width: 100%;
+  background-color: #eff2f5;
+  border: none;
+  outline: none;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+}
+
+.updated_bio {
+  width: 30%;
+  margin-top: 10px;
+  padding: 4px 0px 4px 0px;
+  border: none;
+  border-radius: 3px;
+}
+
+.update_pro_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pro_input {
+  width: 100%;
+  background-color: #eff2f5;
+  border: none;
+  outline: none;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+}
+
+.pro_label {
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+.delete_post{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+.delete_post>.MuiSvgIcon-root{
+  position: relative;
+  right: 20px;
+  color: gray;
+  cursor: pointer;
+  top: 10px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .cover_pic {
+    height: 150px;
+  }
+  .profile_div {
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+  .profile_img {
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: 0;
+  }
+  .name > p {
+    margin-top: 0;
+    position: relative;
+    top: -10px;
+  }
+  .edit {
+    width: 100%;
+    margin-top: 0;
+  }
+  .profile_feed_container {
+    width: 100%;
+  }
+  .camera {
+    right: 35px;
+  }
+  .cover_btn {
+    padding: 3px 10px 3px 10px;
+    right: 20px;
+  }
+  .edit_pro_res {
+    width: 100% !important;
+  }
+  .intro{
+    position: none;
+  }
+}

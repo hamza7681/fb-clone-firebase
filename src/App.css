@@ -1,0 +1,16 @@
+.App {
+  background-color: #f1f2f5;
+  height: auto;
+}
+
+.app_body {
+  display: flex;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .sidebar_div{
+      display: none;
+    }
+}
